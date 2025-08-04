@@ -3,37 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mi Tienda Virtual</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <title>Tienda TechPro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="proyecto1.css" />
 </head>
 <body>
   <header>
-    <nav>
-      <h1>Mi Tienda Virtual</h1>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
+    <div class="container nav-container">
+      <h1 class="logo">TechPro</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#promociones">Promociones</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Bienvenido a Mi Tienda</h2>
-      <p>Los mejores productos al mejor precio.</p>
-    </section>
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>La tecnología que impulsa tu vida</h2>
+      <p>Equipamiento de última generación a precios increíbles.</p>
+      <a href="#productos" class="btn-primary">Explorar Productos</a>
+    </div>
+  </section>
 
-    <section class="productos">
+  <main>
+    <section id="productos" class="container productos">
       <h2>Productos Destacados</h2>
-      <ul>
+      <ul class="productos-lista">
         <li>
           <article>
             <a href="https://www.pccomponentes.com/monitor-lg-27ul500-w-27-4k-ips" target="_blank" rel="noopener">
-              <img src="https://img.pccomponentes.com/articles/20/204871/monitor-lg-27ul500-w-27-4k-ips.jpg" alt="Monitor LG 27UL500-W 27'' 4K IPS" />
+              <img src="https://img.pccomponentes.com/articles/20/204871/monitor-lg-27ul500-w-27-4k-ips.jpg" alt="Monitor LG 27UL500-W" />
               <h3>Monitor LG 27UL500-W 27'' 4K IPS</h3>
-              <p>Monitor 4K con panel IPS para imágenes nítidas y colores vivos.</p>
+              <p>Imágenes nítidas y colores vibrantes.</p>
+              <span class="precio">379,99€</span>
             </a>
           </article>
         </li>
@@ -41,8 +49,9 @@
           <article>
             <a href="https://www.pccomponentes.com/apple-iphone-14-128gb-negro" target="_blank" rel="noopener">
               <img src="https://img.pccomponentes.com/articles/60/602473/apple-iphone-14-128gb-negro.jpg" alt="Apple iPhone 14 128GB Negro" />
-              <h3>Apple iPhone 14 128GB Negro</h3>
-              <p>Smartphone con gran rendimiento y cámara avanzada.</p>
+              <h3>Apple iPhone 14 128GB</h3>
+              <p>Potente, elegante y versátil.</p>
+              <span class="precio">999,00€</span>
             </a>
           </article>
         </li>
@@ -51,7 +60,8 @@
             <a href="https://www.pccomponentes.com/logitech-g-pro-wireless" target="_blank" rel="noopener">
               <img src="https://img.pccomponentes.com/articles/46/461894/logitech-g-pro-wireless.jpg" alt="Ratón Logitech G Pro Wireless" />
               <h3>Ratón Logitech G Pro Wireless</h3>
-              <p>Ratón inalámbrico para gaming con alta precisión.</p>
+              <p>Máxima precisión sin cables.</p>
+              <span class="precio">129,95€</span>
             </a>
           </article>
         </li>
@@ -60,70 +70,80 @@
             <a href="https://www.pccomponentes.com/amd-ryzen-5-5600x" target="_blank" rel="noopener">
               <img src="https://img.pccomponentes.com/articles/35/350317/amd-ryzen-5-5600x.jpg" alt="Procesador AMD Ryzen 5 5600X" />
               <h3>Procesador AMD Ryzen 5 5600X</h3>
-              <p>Procesador de alto rendimiento para PC gaming y productividad.</p>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <a href="https://www.pccomponentes.com/corsair-vengeance-lpx-16gb-3200mhz" target="_blank" rel="noopener">
-              <img src="https://img.pccomponentes.com/articles/45/459655/corsair-vengeance-lpx-16gb-3200mhz.jpg" alt="Memoria RAM Corsair Vengeance LPX 16GB 3200MHz" />
-              <h3>Memoria RAM Corsair Vengeance LPX 16GB 3200MHz</h3>
-              <p>Memoria rápida y estable para rendimiento óptimo.</p>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <a href="https://www.pccomponentes.com/nvidia-geforce-rtx-3060" target="_blank" rel="noopener">
-              <img src="https://img.pccomponentes.com/articles/64/644564/nvidia-geforce-rtx-3060.jpg" alt="Tarjeta gráfica Nvidia GeForce RTX 3060" />
-              <h3>Tarjeta gráfica Nvidia GeForce RTX 3060</h3>
-              <p>Gráficos potentes para gaming y creación de contenido.</p>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <a href="https://www.pccomponentes.com/samsung-970-evo-plus-1tb" target="_blank" rel="noopener">
-              <img src="https://img.pccomponentes.com/articles/26/261263/samsung-970-evo-plus-1tb.jpg" alt="SSD Samsung 970 EVO Plus 1TB" />
-              <h3>SSD Samsung 970 EVO Plus 1TB</h3>
-              <p>Almacenamiento rápido para carga y transferencia de datos.</p>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <a href="https://www.pccomponentes.com/logitech-c920-webcam" target="_blank" rel="noopener">
-              <img src="https://img.pccomponentes.com/articles/37/379438/logitech-c920-webcam.jpg" alt="Webcam Logitech C920" />
-              <h3>Webcam Logitech C920</h3>
-              <p>Webcam Full HD para videollamadas y streaming.</p>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <a href="https://www.pccomponentes.com/razer-blackwidow-v3-pro" target="_blank" rel="noopener">
-              <img src="https://img.pccomponentes.com/articles/47/471057/razer-blackwidow-v3-pro.jpg" alt="Teclado Razer BlackWidow V3 Pro" />
-              <h3>Teclado Razer BlackWidow V3 Pro</h3>
-              <p>Teclado mecánico inalámbrico para gamers.</p>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <a href="https://www.pccomponentes.com/sony-wh-1000xm4" target="_blank" rel="noopener">
-              <img src="https://img.pccomponentes.com/articles/59/598001/sony-wh-1000xm4.jpg" alt="Auriculares Sony WH-1000XM4" />
-              <h3>Auriculares Sony WH-1000XM4</h3>
-              <p>Auriculares inalámbricos con cancelación de ruido.</p>
+              <p>Rendimiento para gaming y productividad.</p>
+              <span class="precio">195,00€</span>
             </a>
           </article>
         </li>
       </ul>
     </section>
+
+    <section id="promociones" class="promociones">
+      <div class="container">
+        <h2>Promociones Exclusivas</h2>
+        <div class="promos-grid">
+          <div class="promo-card">
+            <h3>Envío gratis</h3>
+            <p>En compras superiores a 50€.</p>
+          </div>
+          <div class="promo-card">
+            <h3>10% Descuento</h3>
+            <p>En tu primera compra.</p>
+          </div>
+          <div class="promo-card">
+            <h3>Garantía Extendida</h3>
+            <p>3 años en todos los productos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonios" class="testimonios container">
+      <h2>Qué dicen nuestros clientes</h2>
+      <ul class="testimonios-lista">
+        <li>
+          <blockquote>
+            <p>Excelente atención y productos de calidad. Muy recomendable.</p>
+            <cite>— Laura M.</cite>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote>
+            <p>Compré un monitor y llegó rápido, perfecto estado y funcionando genial.</p>
+            <cite>— Carlos P.</cite>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote>
+            <p>Los mejores precios y ofertas que he encontrado online.</p>
+            <cite>— Marta G.</cite>
+          </blockquote>
+        </li>
+      </ul>
+    </section>
+
+    <section id="newsletter" class="newsletter">
+      <div class="container">
+        <h2>Suscríbete a nuestro newsletter</h2>
+        <p>Recibe ofertas y novedades directamente en tu correo.</p>
+        <form action="#" method="post" class="form-newsletter">
+          <input type="email" name="email" placeholder="Tu correo electrónico" required />
+          <button type="submit" class="btn-primary">Suscribirme</button>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>© 2025 Mi Tienda Virtual - Todos los derechos reservados.</p>
+  <footer id="contacto">
+    <div class="container footer-content">
+      <p>© 2025 TechPro. Todos los derechos reservados.</p>
+      <p>Contacto: info@techpro.com | Tel: +34 912 345 678</p>
+      <ul class="redes-sociales">
+        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        <li><a href="#" aria-label="Twitter">Twitter</a></li>
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+      </ul>
+    </div>
   </footer>
 </body>
 </html>
